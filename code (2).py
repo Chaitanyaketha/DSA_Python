@@ -1,0 +1,16 @@
+# Palindrome number
+
+def Palindrome(n) :
+    rev = 0
+    temp = n
+    while temp != 0 :
+        r = temp % 10
+        rev = rev * 10 + r
+        temp = temp // 10
+    if (rev == n) :
+        print(True)
+    else :
+        print(False)
+    
+n=int(input())
+Palindrome(n)
