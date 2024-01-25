@@ -1,0 +1,26 @@
+# GCD and HCF of two numbers
+
+#euclidean method
+# def gcd(a,b):
+#     while a!=b:
+#         if(a>b):
+#             a=a-b
+#         else:
+#             b=b-a
+#     return a
+#     #or return b
+    
+# a=int(input())
+# b=int(input())
+# print(gcd(a,b))
+
+#more optimized euclidean solution 
+def gcd(a,b):
+    if b==0:
+        return a
+    else:
+        return gcd(b , a%b)
+        
+a=int(input())
+b=int(input())
+print(gcd(a,b))
