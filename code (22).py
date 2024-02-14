@@ -1,0 +1,22 @@
+class Node:
+    def __init__(self,key):               #class for the creation of the linked lists
+        self.key=key
+        self.next=None
+
+
+def printLL(head):                        #function for the travesing and printing the LL
+    curr=head
+    while(curr!=None):
+        print(curr.key,end=" ")
+        curr=curr.next
+
+
+
+
+
+
+head=Node(10)                #Creating the LL
+head.next=Node(20)
+head.next.next=Node(30)
+head.next.next.next=Node(40)
+printLL(head)
